@@ -32,5 +32,6 @@ app.post('/analyse', async (req, res) => {
     res.status(500).json({ error: 'API call failed' });
   }
 });
+const PORT = process.env.PORT || 3000;
 
-app.listen(3000, () => console.log('Proxy server running on http://localhost:3000'));
+app.listen(PORT, () => console.log('Proxy server running on port ${PORT}'));

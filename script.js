@@ -13,7 +13,7 @@ async function analyzeSentiment(event) {
     resultDisplay.innerHTML = 'Analyzing... <span class="cursor">█</span>';
 
     try {
-        const response = await fetch('http://localhost:3000/analyse', {
+        const response = await fetch('https://your-railway-app-url.up.railway.app/analyse', {
             method: "POST",
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded"

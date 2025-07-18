@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="mainContent">
+        <section class="heading">
+            <h1>Sentiment Analysis Tool<span class="cursor">█</span></h1>
+        </section>
+
+        <section class="analyseSection">
+            <form id="sentimentForm" >
+                <label for="textInput">Enter Text To be analysed:<span class="cursor">█</span></label>
+                <textarea id="textInput" rows="4" cols="50" placeholder="Type your text here..."></textarea>
+                
+                <button onclick="analyzeSentiment(event)" id="btn" >Analyse Sentiment</button>
+            </form>
+
+            <section class="resultSection">
+                <h2>Analysis Result:</h2>
+                <div id="resultDisplay">
+                    <!-- Result will be displayed here after form submission -->
+                </div>
+
+        </section>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

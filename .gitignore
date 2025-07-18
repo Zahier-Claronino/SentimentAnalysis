@@ -1,0 +1,9 @@
+# Ignore the main server file
+server.js
+
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore package manager files
+package.json
+package-lock.json
